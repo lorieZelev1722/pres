@@ -1,0 +1,477 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+input::placeholder{
+    color:#A9A9A9;
+}
+
+html{
+    display:block;
+}
+
+body{
+   overflow-y: scroll;
+}
+
+.hide{
+    display: none;
+}
+
+@media only screen and (min-width: 450px) {
+    .main-container{
+        grid-template-rows: 100px 65px auto;
+    }
+
+    .main-header-02 .main-header-02-layout{
+        grid-template-columns: 50px 175px 175px auto;
+        gap: 30px;
+    }
+
+
+    .main-header-01-logo img{
+        height: 85px;
+    }
+
+    .main-header-01{
+        grid-template-columns: auto 250px;
+    }
+
+    .main-header-01-menus .main-menus-desktop{
+        display: grid;
+    }
+
+    .main-header-01-menus .main-menu-mobile{
+        display:none;
+    }
+
+    .header-02-dropdown{
+        height: 35px;
+    }
+
+    .header-02-dropdown span {
+        font-size: 13px;
+    }
+
+    .header-02-menu{
+        height: 35px;
+    }
+
+    .header-02-menu a{
+        font-size: 13px;
+    }
+
+    .search-layout-home svg{
+        height: 18px;
+    }
+
+    .filter-input-layout input{
+        font-size: 13px;
+    }
+
+    .filter-input-layout svg{
+        height: 15px;
+    }
+
+    .header-02-dropdown-arrow svg{
+        height: 15px;
+     }
+
+     .filter-btn-search span{
+        font-size: 15px;
+     }
+
+     .header02-dropdown-menu a {
+        font-size: 15px;
+     }
+
+     .header02-dropdown-menu {
+        width: 175px;
+    }
+
+     .main-content-layout span{
+        font-size: 18px;
+     }
+
+     .filter-input-layout{
+        width: auto;
+     }
+
+
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .main-container{
+        grid-template-rows: 100px 100px auto;
+    }
+
+    .main-header-02 .main-header-02-layout{
+        grid-template-columns: 50px 150px 150px 100px;
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .main-header-01{
+        grid-template-columns: auto 55px;
+    }
+
+    .main-header-01-logo img{
+        height: 95px;
+    }
+
+    .main-header-01-menus .main-menus-desktop{
+        display: none;
+    }
+
+    .main-header-01-menus .main-menu-mobile{
+        display: flex;
+    }
+
+    .header02-dropdown-menu {
+        width: 150px;
+    }
+
+    .header-02-dropdown{
+        height: 55px;
+    }
+
+    .header-02-dropdown span {
+        font-size: 18px;
+    }
+
+    .header-02-menu a{
+        font-size: 18px;
+    }
+
+    .header-02-menu{
+        height: 55px;
+    }
+
+    .search-layout-home svg{
+        height: 35px;
+    }
+
+    .filter-input-layout input{
+        font-size: 18px;
+    }
+
+    .filter-input-layout svg{
+        height: 25px;
+    }
+
+    .header-02-dropdown-arrow svg{
+        height: 25px;
+     }
+
+     .filter-btn-search span{
+        font-size: 20px;
+     }
+
+     .header02-dropdown-menu a {
+        font-size: 18px;
+     }
+
+     .main-content-layout span{
+        font-size: 25px;
+     }
+
+     .filter-input-layout{
+        width: 240px;
+     }
+
+
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+}
+
+.main-header-01{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    background-color: #fcac0c;
+    padding: 5px 15px;
+
+}
+
+.main-header-02{
+    background-color: #696969;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.main-header-02 .main-header-02-layout{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header-01 .main-header-01-logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+
+.main-header-01 .main-header-01-menus{
+   width: 100%;
+}
+
+.main-header-01-menus .main-menus-desktop{
+    height: 100%;
+    width: 100%;
+    /* display: grid; */
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.main-menus-desktop .desktop-menu{
+    color: #fff;
+}
+
+.main-header-01-menus .main-menu-mobile{
+    /* display: flex; */
+    align-items: center;
+    justify-content: end;
+    position: relative;
+
+}
+
+.main-menu-mobile .mobile-btn-menu{
+    height: 65px;
+    background-color: #fff;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+
+}
+
+.mobile-btn-menu svg{
+    height: 35px;
+}
+
+.mobile-dropdown-menu{
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    display: grid;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 10px 15px;
+    z-index: 999;
+    top: 100%;
+    right: 10px;
+    transition:3.0s ease-in;
+    font-size: 18px;
+}
+
+.mobile-dropdown-menu a{
+    text-decoration: none;
+    align-self: center;
+    color: #000000;
+}
+
+.header-02-menu{
+    background-color: #000000;
+    padding: 5px 10px;
+    /* border: 1px groove #fff; */
+    display: flex;
+    align-items: center;
+}
+
+.header-02-menu a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.header-02-dropdown{
+    padding: 5px 10px;
+    background-color: #fff;
+    width: auto;
+    display: grid;
+    grid-template-columns: auto 35px;
+    align-items: center;
+    position: relative;
+}
+
+.header02-dropdown-menu{
+    position: absolute;
+    background-color: #fff;
+    display: grid;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 10px 15px;
+    z-index: 999;
+    top: 100%;
+}
+
+.search-filter-menu{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 10px 15px;
+    padding-top: 15px;
+    z-index: 999;
+    top: 100%;
+}
+
+.filter-input-layout{
+    display: grid;
+    grid-template-columns: 200px 35px;
+    align-items: center;
+    border: 1px solid #696969;
+    height: 50px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.filter-input-layout input{
+    border: none;
+    outline: none;
+}
+
+.filter-btn-search{
+    display: flex;
+    justify-content: center;
+    padding:10px 15px;
+    font-size: 15px;
+}
+
+.filter-btn-search span{
+    background-color:#696969;
+    color: #fff;
+    padding: 5px 10px;
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-menu-layout{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 25px;
+    height: 65px;
+}
+
+.header02-dropdown-menu a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-02-dropdown-arrow{
+    display: flex;
+    justify-content: end;
+}
+
+.search-layout-home{
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.search-layout-home svg{
+    fill: #fff;
+}
+
+.main-content-layout{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 55px auto;
+    padding: 20px 30px;
+    gap: 35px;
+}
+
+.main-content-form{
+    width: 100%;
+    display: grid;
+    grid-template-rows:55px 55px 55px 55px 55px 1fr 35px;
+    gap: 40px;
+    align-items: center;
+}
+
+.main-content-form .main-content-submit-btn{
+   display: flex;
+   justify-content: center;
+}
+
+.main-content-submit-btn button{
+    height: 55px;
+    width: 350px;
+    background-color: #d9800d;
+    color:#fff;
+    border: none;
+    font-size: 20px;
+}
+
+.main-content-layout span{
+   display: flex;
+   align-items: center;
+   margin-left: 15px;
+}
+
+.main-content-input-layout{
+    display: grid;
+    grid-template-rows: 25px 1fr;
+    gap: 5px;
+    padding: 10px;
+}
+
+.main-content-textarea-layout{
+    display: grid;
+    grid-template-rows: 35px 1fr;
+    gap: 5px;
+    padding: 10px;
+}
+
+.main-content-input-layout label{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.main-content-textarea-layout label{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.main-content-input-layout input{
+    height: 45px;
+    font-size: 20px;
+    border: 1px solid #696969;
+    padding: 0 10px;
+    color:#696969;
+}
+
+.main-content-textarea-layout textarea{
+    font-size: 20px;
+    border: 1px solid #696969;
+    padding: 5px 10px;
+    color:#696969;
+}
+
+

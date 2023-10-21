@@ -1,0 +1,229 @@
+
+.home-main-content{
+  display: grid;
+  grid-template-rows: 389px auto;
+  height: auto;
+}
+
+.home-main-content-carousel{
+   display: flex;
+   align-items: center;
+   height:100%;
+   position: relative;
+}
+
+.home-main-content-carousel .carousel-slide{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    transition: 0.6s ease;
+    flex: 0 0 100%;
+}
+
+.home-main-label{
+    position: absolute;
+    height: auto;
+    width: 350px;
+    background-color: inherit;
+    top: 25%;
+    left: 3%;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.home-main-label h3{
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.home-main-label span{
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.home-main-label-btn-group{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+
+.home-main-label-btn-group .view-info-btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color:#d9800d;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.home-main-label-btn-group .view-listing-btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    border: 1px solid #696969;
+    color: #000000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.home-main-content-carousel img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(50%);
+    transition: 0.6s ease;
+}
+
+
+.carousel-back-arrow{
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 2%;
+    height: 55px;
+    width: 55px;
+    background-color: rgba(255, 255, 255, 0.5); /* Partially transparent white */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-next-arrow{
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    right: 2%;
+    height: 55px;
+    width: 55px;
+    background-color: rgba(255, 255, 255, 0.5); /* Partially transparent white */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-back-arrow svg, .carousel-next-arrow svg {
+    height: 20px;
+    fill: #000000;
+    margin-right: 5px;
+}
+
+.home-main-content-lists{
+    width: 100%;
+    padding: 15px 25px;
+}
+
+.main-content-list-layout{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:15px;
+    margin: 25px 0;
+}
+
+.main-content-card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: 375px;
+    display: grid;
+    grid-template-rows: 155px 1fr;
+}
+
+.main-content-card .main-content-card-image{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main-content-card-review{
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    right: 0;
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 45px;
+    width: auto;
+    padding: 5px;
+}
+
+.main-content-card-review span{
+    font-size: 25px;
+    font-weight: 800;
+    color:#000000;
+}
+
+.main-content-card-review .card-review-star-layout{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 5px;
+    align-items: center;
+}
+
+.card-review-star-layout svg{
+    height: 20px;
+    fill:#d9800d;
+}
+
+.main-content-card-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-content-card-label{
+    display: grid;
+    grid-template-rows: 35px 35px 65px;
+    padding: 5px 10px;
+    padding-top: 15px;
+}
+
+.main-content-card-label .main-content-card-title{
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.main-content-card-label .main-content-card-price{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color:#d9800d;
+}
+
+.main-content-card-label .main-content-card-btn-group{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-top: 20px;
+    gap: 10px
+}
+
+.main-content-card-btn-group .view-info-btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color:#fcac0c;
+    color: #fff;
+    font-size: 18px;
+}
+
+.main-content-card-btn-group .view-listing-btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    border: 1px solid #696969;
+    color: #000000;
+    font-size: 18px;
+}
